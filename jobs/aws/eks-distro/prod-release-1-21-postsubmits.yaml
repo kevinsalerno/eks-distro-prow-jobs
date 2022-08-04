@@ -42,7 +42,7 @@ postsubmits:
       automountServiceAccountToken: false
       containers:
       - name: build-container
-        image: public.ecr.kevinsalerno/eks-distro-build-tooling/builder-base:5d1c2feb8d74a1919b87e6263e96020f08dbf314.2
+        image: public.ecr.aws/eks-distro-build-tooling/builder-base:5d1c2feb8d74a1919b87e6263e96020f08dbf314.2
         command:
         - bash
         - -c
@@ -64,7 +64,7 @@ postsubmits:
         - name: RELEASE_BRANCH
           value: "1-21"
         - name: IMAGE_REPO
-          value: "public.ecr.kevinsalerno/eks-distro"
+          value: "public.ecr.aws/eks-distro"
         resources:
           requests:
             memory: "16Gi"
